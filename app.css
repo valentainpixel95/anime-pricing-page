@@ -1,0 +1,427 @@
+/* CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CSS RESET FINE */
+
+html {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*ora inizio a settare il css veramente */
+
+body {
+    line-height: 1;
+    background-color: #141414;
+    font-family: 'Montserrat', sans-serif;
+    color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.all-plan {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 130px 20px 40px;
+    
+
+}
+
+.text-plan {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.text-pre-header {
+    font-size: 14px;
+    color: #D9A47E;
+    letter-spacing: 2px;
+}
+
+.text-header {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    margin: 15px 0;
+}
+
+.text-info {
+    font-size: 16px;
+    color: #B5B5B5;
+}
+
+.all-cards-plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    width: 100%;
+}
+
+.cards-plan {
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 800px;
+    background-color: #202020;
+    border-radius: 18px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 600px;
+    min-width: 0;
+}
+
+.card-img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+/* Demon Slayer */
+.card-slayer {
+    border: 3px solid #477B5C;
+}
+
+/* Attack on Titan */
+.card-titan {
+    border: 3px solid #783B48;
+}
+
+/* One Piece */
+.card-onepiece {
+    border: 3px solid #B08D45;
+}
+
+.card-title h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin: 10px 0 5px;
+    color: #f5f5f5;
+
+}
+
+.card-title h3 {
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Demon Slayer */
+.card-slayer .card-title h3 {
+    color: #477B5C;
+}
+
+/* Attack on Titan */
+.card-titan .card-title h3 {
+    color: #9A5965;
+}
+
+/* One Piece */
+.card-onepiece .card-title h3 {
+    color: #B08D45;
+}
+
+.card-features {
+    width: 100%;
+    box-sizing: border-box;
+    list-style: none;
+    padding: 20px 12px;
+    margin: 0;
+    text-align: center;
+}
+
+/* se dovessi fare la linea creandola da zero e quindi creando un vuoto e poi dandogli un display block per potergli 
+dare width e height e creare una linea ma sarebbe più un rettangolo 
+.card-features::before {
+    content: ""; /* per dire al before cosa che è un content che esiste ma non ha testo 
+    display: block;
+    width: 65%;
+    height: 1px;
+    margin: 0 auto 20px;
+    background-color: #B08D45;
+} */
+
+.card-divider {
+    width: 65%;
+    border: none;
+    height: 1px;
+    margin: 20px auto 20px;
+}
+
+/* Demon Slayer */
+.card-slayer .card-divider {
+    background-color: #477B5C;
+}
+
+/* Attack on Titan */
+.card-titan .card-divider {
+    background-color: #783B48;
+}
+
+/* One Piece */
+.card-onepiece .card-divider {
+    background-color: #B08D45;
+}
+
+.card-features {
+    width: 100%;
+    box-sizing:border-box;
+}
+
+.card-features-item {
+    margin-bottom: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #D0D0D0;
+    text-align: center;
+}
+
+.card-features-item::before {
+    content: "✓";
+    margin-right: 10px;
+    font-weight: 700;
+}
+
+/* Demon Slayer */
+.card-slayer .card-features-item::before {
+    color: #8FC9A0;
+}
+
+/* Attack on Titan */
+.card-titan .card-features-item::before {
+    color: #9A5965;
+}
+
+/* One Piece */
+.card-onepiece .card-features-item::before {
+    color: #B08D45;
+}
+
+/* metto linea 2 di slayer e titan più giù per combaciarla con one piece */
+.card-slayer .card-divider.divider-two {
+    margin-top: 60px;
+}
+
+.card-titan .card-divider.divider-two {
+    margin-top: 60px;
+}
+
+.card-price-final {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 8px;
+    margin: 25px 0;
+}
+
+.card-price-euro {
+    font-size: 36px;
+    font-weight: 700;
+    color: #f5f5f5;
+}
+
+.card-price-month {
+    font-size: 14px;
+    font-weight: 400;
+    color: #A5A5A5;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 14px 28px;
+    margin: 20px 0 30px;
+
+
+    border-radius: 10px;
+    border: 1px solid transparent;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Demon Slayer */
+.card-slayer .card-button {
+    background-color: #477B5C;
+    color: #FFFFFF;
+    border-color: #477B5C;
+}
+
+.card-slayer .card-button:hover {
+    background-color: #5A936F;
+    border-color: #5A936F;
+    transform: translateY(-2px);
+}
+
+/* Attack on Titan */
+.card-titan .card-button {
+    background-color: #9A5965;
+    color: #FFFFFF;
+    border-color: #9A5965;
+}
+
+.card-titan .card-button:hover {
+    background-color: #B16C7A;
+    border-color: #B16C7A;
+    transform: translateY(-2px);
+}
+
+/* One Piece */
+.card-onepiece .card-button {
+    background-color: #B08D45;
+    color: #202020;
+    border-color: #B08D45;
+}
+
+.card-onepiece .card-button:hover {
+    background-color: #C7A456;
+    border-color: #C7A456;
+    transform: translateY(-2px);
+}
+
+
+
+.popular-badge {
+    display: block;
+    width: fit-content;
+    margin: 12px auto 0;
+    padding: 8px 16px;
+
+    background-color: #783B48;
+    color: #FFFFFF;
+    border-radius: 6px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+}
+
+.card-titan-wrapper:hover .popular-badge {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-button {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    transition: filter 0.3s ease;
+}
+
+.card-button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -75%;
+    width: 45%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.35);
+    transform: rotate(25deg);
+    transition: left 0.6s ease;
+    pointer-events: none;
+}
+
+.card-button:hover::before {
+    left: 130%;
+}
+
+.card-button:hover {
+    filter: brightness(1.12);
+}
+
+.card-wrapper:hover .cards-plan {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.card-wrapper:hover .cards-plan img {
+    transform: scale(1.06);
+}
