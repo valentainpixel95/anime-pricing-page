@@ -19,15 +19,25 @@ A fictional anime streaming subscription page created to practice webpage struct
 - Creating subscription plan cards
 - Organizing webpage sections and layouts
 
+## Project Updates
+
+**November 4, 2026 – Responsive Design**
+
+- Added a mobile-friendly layout
+- Introduced vertically stacked subscription cards
+- Implemented CSS Scroll Snap for mobile navigation
+- Added a mobile introduction section with custom icons and scroll indicator
+- Improved the overall mobile browsing experience
+
 ## Future Improvements
 
-- Make the page responsive for mobile and tablet devices
 - Improve accessibility
 - Add interactive elements using JavaScript
+- Further refine the responsive experience
 
 ## Project Preview
 
-**Live Demo:** Coming soon!
+**Live Demo:** [View Project](https://valentainpixel95.github.io/anime-pricing-page/)
 
 ---
 
